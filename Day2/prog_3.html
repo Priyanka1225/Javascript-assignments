@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date format</title>
+</head>
+<body>
+	<h3>Today is: </h3>
+	<p id="format1"></p>
+	<p id="format2"></p>
+	<p id="format3"></p>
+	<p id="format4"></p>
+<script>
+	var date=new Date();
+	var dd=date.getDate();
+	var mm=date.getMonth();
+	var yy=date.getFullYear();
+	var currentdate=dd+"-"+mm+"-"+yy;
+	document.getElementById("format1").innerHTML =currentdate;
+	var currentdate=dd+"/"+mm+"/"+yy;
+	document.getElementById("format2").innerHTML =currentdate;
+	var currentdate=mm+"-"+dd+"-"+yy;
+	document.getElementById("format3").innerHTML =currentdate;
+	var currentdate=mm+"/"+dd+"/"+yy;
+	document.getElementById("format4").innerHTML =currentdate;
+
+</script>
+</body>
+</html>
