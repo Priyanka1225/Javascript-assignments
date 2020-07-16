@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String and array methods</title>
+</head>
+<body>
+	<p>Explain with examples the remaining methods of String and Array</p>
+
+<script >
+	// STRING METHODS:
+	let str="This is an example for string.";
+	str2=" Yes, this is second string."
+	
+	// To concatinate two strings.
+	console.log(str.concat(str2));
+	
+	// to cut or slice the string.
+	console.log(str.slice(5,15));
+	
+	// trim() methods removes the extra space from start and end of string.
+	console.log(str2.trim());
+	
+	// match returns every string which mathes the specified string.
+	console.log(str.match("i"));
+	
+	// substring or subsstr returns the part of string from and to the specified indexes.
+	console.log(str.substring(7,12));
+	
+	// startsWith returns boolean value, if str starts with the specified string then it returns true.
+	console.log(str.startsWith("This"));
+	
+	// It returns the starting index of the specified string.
+	console.log(str.search("for"));
+
+	// this will repplace the string 'for' with 'of'.
+	console.log(str.replace("for","of"));
+
+	// ARRAY METHODS:
+	let arr1=["tue","wed","fri","sat"];
+	console.log(arr1);
+
+	// to replace element at index 0 with new element.
+	arr1[0]="mon";
+	console.log(arr1);
+
+	// to add element after last element.
+	arr1[arr1.length]="sun";
+	console.log(arr1);
+
+	// to delete an element at specified index.
+	delete arr1[4];
+	console.log(arr1);
+
+	// to break/slice an array from specified index position and store the remaining array in another array.
+	let arr2=arr1.slice(2);
+	console.log(arr2);
+</script>
+
+</body>
+</html>
