@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Even or odd</title>
+</head>
+<body>
+	<h4>Question 1:
+Take a number from a user and write a function which checks whether the number is even or
+odd. Assign the result to a variable and log that variable in the console.
+Example Input: 23
+Output: The number entered is 23 and Number is odd</h4>
+
+<script>
+	
+	let num=prompt("Enter any Integer:",0);
+	console.log("The number is: "+num);
+
+	function check(num)
+	{
+		if((num%2)==0)
+			console.log("The number entered is "+num+ " and it's even.");
+		else
+			console.log("The number entered is "+num+ " and it's odd.");
+	}
+
+	check(num);
+
+</script>
+</body>
+</html>
